@@ -16,7 +16,7 @@ window.liveMixins = {
 Then include the CDN link just before your closing </body> tag:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/harryfear/Live-Class-Mixins/master.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/harryfear/Live-Class-Mixins@latest/master.min.js"></script>
 ```
 
 We're using this in production to polyfil for Bootstrap's lack of @apply.
