@@ -20,3 +20,17 @@ Then include the CDN link just before your closing </body> tag:
 ```
 
 We're using this in production to polyfil for Bootstrap's lack of @apply.
+
+If you're worried about a flash of unstyled or half-style content, you can add the stopFOUC class to your initial element class list, and put this style snippet just next to your script CDN include:
+
+```
+<style>
+.stopFOUC { visibility:hidden; }
+</style>
+```
+
+For example:
+
+```
+<h1 class="stopFOUC heading">Hello World</h1>
+```
