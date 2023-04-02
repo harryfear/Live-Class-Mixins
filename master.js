@@ -15,9 +15,9 @@ function applyClasses(mixins) {
         let newClasses = mixins[selector].split(" ");
         let existingClasses = element.className.split(" ");
         
-        // Remove the targeted class from the existing classes array
+        // Remove the targeted class and the "stopFOUC" class from the existing classes array
         existingClasses = existingClasses.filter(function(className) {
-          return !className.split(" ").includes(selector);
+          return !className.split(" ").includes(selector) && className !== "stopFOUC";
         });
         
         // Concatenate the two arrays and join them into a string with spaces between the classes
