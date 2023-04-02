@@ -9,7 +9,7 @@ Define your mixins in JavaScript like this:
 ```javascript
 window.liveMixins = {
 	btn: 'btn btn-primary btn-xs',
-	heading: "display-1"
+	heading: "display-1 fw-bold text-success"
 }
 ```
 
@@ -21,7 +21,7 @@ Then include the CDN link just before your closing `</body>` tag:
 
 We're using this in production to polyfil for Bootstrap's lack of @apply.
 
-If you're worried about a flash of unstyled or half-style content, you can add the stopFOUC class to your initial element class list, and put this style snippet just next to your script CDN include:
+If you're worried about a flash of unstyled or half-style content, you can add the `stopFOUC` class to your element's initial class list, and put this style snippet just next to your script CDN include:
 
 ```
 <style>
